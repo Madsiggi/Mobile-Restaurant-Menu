@@ -1,0 +1,256 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 600px;
+  min-height: 1160px;
+  font-family: "Inter", sans-serif;
+  font-family: "Smythe", cursive;
+  font-weight: 400;
+}
+
+.hero {
+  height: 167px;
+  background-color: #fff;
+  background-image: url(./images/hamburguer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding-left: 47px;
+  margin-bottom: 67px;
+}
+
+.hero-title {
+  font-size: 39px;
+  margin: 0 0 20px 0;
+  font-weight: inherit;
+  line-height: 100%;
+}
+
+.hero-subtitle {
+  margin: 0;
+  font-size: 23px;
+  font-weight: inherit;
+  line-height: 100%;
+}
+
+.food-el {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-el-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 140px;
+  width: 510px;
+  margin: 0 auto 45px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.food-emoji {
+  font-size: 75px;
+  width: 25%;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.food-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-name {
+  margin: 0;
+  font-size: 28px;
+  margin-bottom: 18px;
+  font-weight: inherit;
+  line-height: 28px;
+}
+
+.food-ingredients {
+  margin: 0 0 8px 0;
+  color: #8b8b8b;
+  font-size: 16px;
+}
+
+.food-price {
+  font-size: 20px;
+  margin: 0;
+}
+
+.food-button {
+  width: 25%;
+  text-align: end;
+}
+
+.food-qty-selector {
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  font-family: Inter;
+  margin: auto 5px;
+}
+
+.food-qty-selector:hover {
+  background-color: #8b8b8b;
+  color: white;
+}
+
+.food-qty-selector:active {
+  background-color: #393333;
+  color: #8b8b8b;
+}
+
+.order-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 510px;
+  margin: 0 auto 20px;
+}
+
+.order-title {
+  align-self: center;
+  font-size: 28px;
+  font-weight: inherit;
+  margin-top: 0;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.order-item-name {
+  font-size: 23px;
+  font-weight: inherit;
+}
+
+.order-item-txt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order-item-name {
+  margin-right: 10px;
+}
+
+.order-item-total {
+  font-size: 20px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: #bbbbbb;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+.total-amount {
+  font-size: 25px;
+}
+
+.total-el {
+  border-top: 2px solid #393333;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.grand-total {
+  font-size: 28px;
+}
+
+.order-btn {
+  background-color: #16db99;
+  color: #fff;
+  margin: 0 auto;
+  height: 60px;
+  width: 510px;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pay-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 525px;
+  height: 540px;
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 255px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 3.89px;
+}
+
+.pay-form input {
+  width: 475px;
+  height: 72px;
+  text-align: start;
+  padding-left: 20px;
+  border-radius: 3.89px;
+  border: 1.3px solid #757575;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.pay-btn {
+  background-color: #16db99;
+  color: #fff;
+  width: 475px;
+  height: 72px;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 3.89px;
+}
+
+.order-confirmed {
+  width: 504px;
+  height: 120px;
+  border-radius: 3px;
+  background-color: #ecfdf5;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmed-txt {
+  color: #065f46;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

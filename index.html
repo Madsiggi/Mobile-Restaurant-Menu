@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Normalization -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mobile Restaurant Menu</title>
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <h1 class="hero-title">Jimmy's Diner</h1>
+        <p class="hero-subtitle">The best burguers and pizzas in town.</p>
+      </div>
+    </header>
+    <main>
+      <div class="food-el" id="food-el"></div>
+      <div class="order-section hidden" id="order-section">
+        <h2 class="order-title">Your Order</h2>
+        <div id="order-el"></div>
+        <div class="total-el" id="total-el"></div>
+        <button class="order-btn" id="order-btn">Complete Order</button>
+      </div>
+    </main>
+    <section class="pay-modal hidden" id="pay-modal">
+      <form class="pay-form" id="pay-form">
+        <h1>Enter card details</h1>
+        <input
+          id="pay-name"
+          name="pay-name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        />
+        <input
+          id="pay-card"
+          name="pay-card"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9\s]{13,19}"
+          maxlength="19"
+          placeholder="Enter credit card number"
+          required
+        />
+        <input
+          name="pay-cvv"
+          id="pay-cvv"
+          type="tel"
+          pattern="\d*"
+          maxlength="3"
+          placeholder="CVV"
+          required
+        />
+        <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+      </form>
+    </section>
+    <div class="order-confirmed hidden" id="order-confirmed"></div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
